@@ -1,0 +1,349 @@
+<html> 
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <title>JAYADEEP</title>
+        </head>
+        <style>
+            body {margin: 0;
+                padding: 0;
+                background-color: var(--background-color);
+                color: var(--text-color);
+                font-family: Arial, sans-serif;
+                transition: background-color 0.3s, color 0.3s;
+                 }
+            :root {
+                --background-color: rgb(197, 190, 190);
+                --text-color: black;
+                --button-bg-color: gray;
+                --button-text-color: white;
+                   }
+            body.dark-theme {
+                --background-color: #000000;
+                --text-color: white;
+                --button-bg-color: #555;
+                --button-text-color: black;
+                  }
+
+
+
+            .topbar{
+            padding: 15px;
+            border-bottom: 2px solid white;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            }
+            .topbar a{
+                color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px;
+            }
+            .topbar a:hover{
+                box-shadow:2px 7px 20px rgba(0, 204, 255, 0.9);
+            }
+            .profile{
+                text-decoration: none;
+                width: 100%;
+                height: 40em;
+                display:flex;
+                color: var(--text-color);
+                /* justify-content: space-around; */
+                
+            }
+            .img{
+               margin:3vh 0 0 10px;
+                position: absolute;
+                width:35%;
+                height:auto;
+           }
+           
+            .msg p{
+                margin:12% 0 0 40%;
+                position: absolute;
+                font-size: 1.4vw;
+            }
+            .msg h1{
+                margin:6% 0 0 40%;
+                position: absolute;
+                font-size: 5vw;
+            }
+            #text2{
+                color: var(--text-color);
+                text-decoration: none;
+                position: absolute;
+                font-size:1.3vw ;
+                margin:25.8% 0 0 42%;
+            }
+            #text3{
+                color: var(--text-color);
+                text-decoration: none;
+                position: absolute;
+                font-size: 1.3vw;
+                margin:23% 0 0 42%;
+            }
+            #text4{
+                color: var(--text-color);
+                text-decoration: none;
+                position: absolute;
+                font-size: 1.3vw;
+                margin:29% 0 0 42%;
+            }
+            #text5{
+                text-decoration: none;
+                position: absolute;
+                font-size: 1.3vw;
+                margin:32% 0 0 42%;
+            }
+            .img2{
+                width:1.3vw ;
+                height:auto;
+                position: absolute;
+                margin:26% 0 0 40%;
+            }
+            .img3{
+                width:1.3vw ;
+                height:auto;
+                position: absolute;
+                margin:23% 0 0 40%;
+            }
+            .img4{
+                width:1.3vw ;
+                height:auto;
+                position: absolute;
+                margin:29% 0 0 40%;
+            }
+            .img5{
+                width:1.3vw ;
+                height:auto;
+                position: absolute;
+                margin:32% 0 0 40%;
+            }
+            a span{
+                text-decoration: none;
+            }
+            a span:hover{
+                color: blue;
+            }
+            .edu{
+                /* margin:0 0 0 10vw; */
+                /* background-color: aliceblue; */
+                width: 100%;
+                height: auto;
+            }
+            .edu h1{
+                text-align: center;
+                font-size: 2.5vw;
+            }
+            .ed1{
+                position: absolute;
+                margin:1vh 0 0 17vw;
+                font-size: 1.5vw;
+            }
+            
+            #a{
+                margin: 0 0 0 15vw;
+            }
+            #b{
+                margin: 0 0 0 22vw;
+            }
+            #c{
+                margin: 0 0 0 46vw;
+            }
+            #d{
+                margin: 0 0 0 36vw;
+            }
+            #e{
+                margin: 0 0 0 35vw;
+            }
+            #f{
+                margin: 0 0 0 46vw;
+            }
+            #g{
+                margin: 0 0 0 36vw;
+            }
+            #h{
+                margin: 0 0 0 36vw;
+            }
+            #i{
+                margin: 0 0 0 29vw;
+            }
+            #j{
+                margin: 0 0 0 44vw;
+            }
+            #k{
+                margin: 0 0 0 39vw;
+            }
+            #l{
+                margin: 0 0 0 24vw;
+            }
+            .ed1{
+                background-image: url("C:/Users/jayadeepravipati/Downloads/Screenshot (6).png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+            .proj{
+                margin:101vh 0 0 0 ;
+                /* background-color: rgb(0, 0, 0); */
+                width: 100%;
+                height: 150vh;
+            }
+            .proj h1{
+                position: absolute;
+                margin:0 0 0 38vw;
+                font-size: 2.5vw;
+            }
+            .skl{
+                position: relative;
+                text-align: center;
+            }
+            .toggle-btn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                padding: 10px 20px;
+                background-color: var(--button-bg-color);
+                color: var(--button-text-color);
+                border: none;
+                cursor: pointer;
+                font-size: 25px;
+                border-radius: 100px 100px;
+                transition: background-color 0.3s, color 0.3s;
+              }
+            .toggle-btn img{
+                width:3vw ;
+                height:auto;
+              }
+            .skl img{
+                width:14vw ;
+                height:auto;
+              }
+            .skl{
+                font-size:1.3vw ;
+              }
+              .proj h2{
+                margin:30vh 0 0 30vw;
+                position: absolute;
+                text-align: center;
+                font-size: 5vw;
+              }
+              .cert img{
+                margin-left: 25vw;
+                width:50vw ;
+                height:auto;
+                text-align: center;
+              }
+              .cert h1{
+                position: relative;
+                text-align: center;
+                font-size: 3vw;
+              }
+
+
+        
+        </style>
+    
+    <body>
+        <div class="topbar">
+        <a href="#propage">PROFILE</a>
+        <a href="#edupage">EDUCATION</a>
+        <a href="#projpage">PROJECTS</a>
+        <a href="#sklpage">SKILLS</a>
+        <a href="#certpage">CERTIFICATIONS</a>
+    </div>
+    <section id="propage">
+        <div class="container">  
+            <div class="profile">
+               <img class="img" src="C:\Users\jayadeepravipati\Desktop\New folder\images\port.png" alt="Profile Picture">
+                <div class="msg"><h1> JAYADEEP RAVIPATI</h1>
+                    <p class="pera">I seek a challenging and rewarding career that allows me to enhance my knowledge while offering opportunities to apply my skills in a dynamic and growth-oriented environment. I am eager to contribute to an organization's success by leveraging my expertise in [mention specific skills, e.g., "software development," "project management," "event planning"]. Committed to continuous learning and personal development, I aim to drive innovative solutions and collaborate effectively with teams to achieve both personal and organizational goals.</p>
+                   <img class="img2" src="C:\Users\jayadeepravipati\Desktop\New folder\images\gmail.png" ><a id="text2" href="mailto:jayadeepravipati31@gmail.com"><span>jayadeepravipati31@gmail.com</span></a>
+                   <img class="img3" src="C:\Users\jayadeepravipati\Desktop\New folder\images\mobile.png" ><a id="text3" href="tel:+919676744173"><span>+919676744173</span></a>
+                   <img class="img4" src="C:\Users\jayadeepravipati\Desktop\New folder\images\linkedin.png" ><a id="text4" href="https://www.linkedin.com/in/jayadeepravipati"><span>linkedin</span></a>
+                   <img class="img5" src="C:\Users\jayadeepravipati\Desktop\New folder\images\location.png" ><span id="text5">JEGURUPADU</span>
+
+                </div>
+            </div>
+        </section>
+            <section id="edupage">
+            <div class="edu">
+                <h1>EDUCATION DETAILS</h1>
+                <div class="ed1">
+                <h2>Master of Computer Applications<span id="a">2023-2025</span></h2>
+                <p>Aditya College of Engneering & technology<span id="b">Rajamundry</span></p>
+                <p>JNTUK<span id="c">75%</span></p>
+                <h2>Graduation<span id="d">2019-2022</span></h2>
+                <p>Gayatri Degree College<span id="e">Kadiyam</span></p>
+                <p>AKNU<span id="f">72%</span></p>
+                <h2>Intermediat<span id="g">2017-2019</span></h2>
+                <p>Vagdevi Junior College<span id="h">Kadiyam</span></p>
+                <p>Bord of Intermediat AndhraPradhesh<span id="i">62%</span></p>
+                <h2>SSC<span id="j">2016-2017</span></h2>
+                <p>ZPP High School<span id="k">Jegurupadu</span></p>
+                <p>Bord of Secondry Education,AndhraPradhesh<span id="l">87%</span></p>
+            </div>
+            </div>
+        </section>
+        <section id="projpage">
+        <div class="proj">
+            <h1>MY PROJECTS</h1>
+            <h2>UPDATE SOON</h2>
+        </div>
+    </section>
+    <section id="sklpage">
+    <div class="skl">
+        <h1>MY SKILLS</h1>
+        <h2>- - - - Programing Languages - - - -</h2>
+        <img src="C:\Users\jayadeepravipati\Desktop\New folder\images\letter-c.png"><img src="C:\Users\jayadeepravipati\Desktop\New folder\images\java.png"><img src="C:\Users\jayadeepravipati\Desktop\New folder\images\python.png">
+        <h2>- - - - - - Frontend - - - - - -</h2>
+        <img src="C:\Users\jayadeepravipati\Desktop\New folder\images\html-5.png"><img src="C:\Users\jayadeepravipati\Desktop\New folder\images\css-3.png"><img src="C:\Users\jayadeepravipati\Desktop\New folder\images\js.png"><img src="C:\Users\jayadeepravipati\Desktop\New folder\images\react.png">
+        <h2>- - - - - - Database - - - - - -</h2>
+        <img src="C:\Users\jayadeepravipati\Desktop\New folder\images\database.png">
+    </div>
+</section>
+<section id="certpage">
+    <div class="cert">
+        <h1>CERTIFICATIONS</h1>
+        <img src="C:\Users\jayadeepravipati\Desktop\New folder\images\IMG_20241020_200605.jpg"><br><br>
+        <br><br><img src="C:\Users\jayadeepravipati\Desktop\New folder\images\Ravipati Jayadeep.png">
+    </div>
+</section>
+        </div>
+        <button id="theme-toggle" class="toggle-btn"><img src="C:\Users\jayadeepravipati\Desktop\New folder\images\brightness.png"></button>
+        <script>
+            // Select the theme toggle button and link tag for theme
+            const toggleButton = document.getElementById('theme-toggle');
+            const bodyElement = document.body;
+            
+            // Check local storage for a theme preference
+            const currentTheme = localStorage.getItem('theme');
+            if (currentTheme) {
+              bodyElement.classList.add(currentTheme);
+            }
+            
+            // Event listener to toggle theme
+            toggleButton.addEventListener('click', () => {
+              bodyElement.classList.toggle('dark-theme');
+              
+              let theme = 'light-theme';
+              if (bodyElement.classList.contains('dark-theme')) {
+                theme = 'dark-theme';
+              }
+              
+              // Store the user's preference in localStorage
+              localStorage.setItem('theme', theme);
+            });
+            
+            </script>
+    </body>
+</html>
